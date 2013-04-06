@@ -39,5 +39,5 @@ button {
 
 @import "bb-review-card";
 .bb-review-card {
-  @include bb-review-card;
+  @include bb-review-card(#000, tomato);
 }

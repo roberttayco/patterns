@@ -1,9 +1,5 @@
 // Burger Blog Review Card
-
-$color-overlay: black;
-$color-byline: tomato;
-
-@mixin bb-review-card {
+@mixin bb-review-card($color-overlay, $color-byline) {
   -webkit-background-position: center !important;
           background-position: center;
   -webkit-background-size: cover !important;
@@ -44,7 +40,7 @@ $color-byline: tomato;
 }
 
 .review-score {
-  color: $color-byline;
+  color: tomato;
   display: block;
   font-size: 2.5em;    
   font-weight: bold;
@@ -54,11 +50,11 @@ $color-byline: tomato;
 }
 
 .byline {
-  a { color: $color-byline; }
+  a { color: tomato; }
 }
 
 a.img-block {
-  background: transparentize($color-overlay, .45);
+  background: transparentize(#000, .45);
   display: block;
   height: 100%;
   width: 100%;
