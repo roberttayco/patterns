@@ -1,11 +1,19 @@
 @import "reset";
-
+@import "clearfix";
 /* ================================================== */
 
 body {
   font-family: sans-serif;
-  font-size: 1em;
+  font-size: 100%;
+  line-height: 1.4;
 }
+h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: .5em;
+}
+a { text-decoration: none; }
 
 .fpo {
   border: 1px dotted #ccc;
@@ -15,15 +23,9 @@ body {
   width: 75%;
 }
 
-.center {
-  text-align: center;
+.center { text-align: center; }
 
- & * { margin: 0 auto 3em; }
-}
-
-.wraptest {
-  margin: 2em;
-}
+@include clearfix;
 
 /* ================================================== */
 
@@ -31,4 +33,11 @@ body {
 
 button {
   @include button(tomato, #fff, 4px);
+}
+
+/* ================================================== */
+
+@import "bb-review-card";
+.bb-review-card {
+  @include bb-review-card;
 }

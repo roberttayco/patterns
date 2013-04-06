@@ -41,7 +41,17 @@ table {
 /* ================================================== */
 body {
   font-family: sans-serif;
-  font-size: 1em; }
+  font-size: 100%;
+  line-height: 1.4; }
+
+h2 {
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: .5em; }
+
+a {
+  text-decoration: none; }
 
 .fpo {
   border: 1px dotted #cccccc;
@@ -52,11 +62,17 @@ body {
 
 .center {
   text-align: center; }
-  .center * {
-    margin: 0 auto 3em; }
 
-.wraptest {
-  margin: 2em; }
+/* clearfix */
+.cf:before, .cf:after {
+  content: "";
+  display: table; }
+.cf:after {
+  clear: both; }
+
+/* for IE6/7 */
+.cf {
+  *zoom: 1; }
 
 /* ================================================== */
 button {
@@ -71,6 +87,7 @@ button {
   cursor: pointer;
   display: block;
   font-size: .75em;
+  margin-bottom: 2em;
   padding: 0.7em 1.5em;
   position: relative;
   text-shadow: 0 -1px 0 #e02200;
@@ -85,3 +102,51 @@ button {
     box-shadow: inset 0 0 0 1px #ff8e7a, 0 1px 0 #e02200, 0 2px 2px rgba(0, 0, 0, 0.35);
     position: relative;
     top: 4px; }
+
+/* ================================================== */
+.review-score {
+  color: tomato;
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+  position: absolute;
+  bottom: 60px;
+  right: 40px; }
+
+.byline a {
+  color: tomato; }
+
+a.img-block {
+  background: rgba(0, 0, 0, 0.55);
+  display: block;
+  height: 100%;
+  width: 100%; }
+
+.bb-review-card {
+  -webkit-background-position: center !important;
+  background-position: center;
+  -webkit-background-size: cover !important;
+  background-size: cover;
+  border-top: 3px solid tomato;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+  width: 240px; }
+  .bb-review-card .meta {
+    padding: 5%;
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    width: 100%; }
+    .bb-review-card .meta h2 {
+      font-size: 1.75em;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5), 2px 2px 0 rgba(0, 0, 0, 0.5), 3px 3px 0 rgba(0, 0, 0, 0.5); }
+      .bb-review-card .meta h2 a {
+        color: #fff; }
+    .bb-review-card .meta .byline {
+      font-size: .8em;
+      font-style: italic;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
