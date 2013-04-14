@@ -22,10 +22,20 @@ a { text-decoration: none; }
   padding: 2em;
   width: 75%;
 }
+.full-wrap { width: 100%; }
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 75%;
+}
 
 .center { text-align: center; }
 
 @include clearfix;
+
+/* ================================================== */
+@import "nav";
+
 
 /* ================================================== */
 

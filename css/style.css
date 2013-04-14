@@ -60,6 +60,14 @@ a {
   padding: 2em;
   width: 75%; }
 
+.full-wrap {
+  width: 100%; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 75%; }
+
 .center {
   text-align: center; }
 
@@ -73,6 +81,14 @@ a {
 /* for IE6/7 */
 .cf {
   *zoom: 1; }
+
+/* ================================================== */
+nav {
+  background: red;
+  font-size: .85em; }
+  nav li {
+    float: left;
+    padding: 0.5em 1em; }
 
 /* ================================================== */
 button {
