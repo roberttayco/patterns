@@ -1,0 +1,61 @@
+// Burger Blog Review Card
+@mixin bb-review-card($color-overlay, $color-byline) {
+  -webkit-background-position: center !important;
+          background-position: center;
+  -webkit-background-size: cover !important;
+          background-size: cover;
+  border-top: 3px solid $color-byline;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 350px; 
+  width: 240px;
+
+  .meta {
+    padding: 5%;
+    position: absolute;
+    text-align: center;
+    top: 1em;
+    width: 100%;
+    
+
+    h2 {
+      font-size: 1.75em;
+      text-shadow: 1px 1px 0 rgba(0,0,0,.5),
+                   2px 2px 0 rgba(0,0,0,.5),
+                   3px 3px 0 rgba(0,0,0,.5);
+
+      a { color: #fff; }
+    }
+
+    .byline {
+      font-size: .8em;
+      font-style: italic;
+      text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+    }
+
+  }
+}
+
+.review-score {
+  color: tomato;
+  display: block;
+  font-size: 2.5em;    
+  font-weight: bold;
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+}
+
+.byline {
+  a { color: tomato; }
+}
+
+a.img-block {
+  background: transparentize(#000, .45);
+  display: block;
+  height: 100%;
+  width: 100%;
+}
